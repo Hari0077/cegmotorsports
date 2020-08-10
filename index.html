@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ceg Motorsports</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <img src="images/example.png" style="width: 50px; height: 50px;"> &nbsp;&nbsp;
+  <a class="navbar-brand" href="#">CEG MOTORSPORTS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html"><font color="white">HOME</a></font>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.php"><font color="white">ABOUT</a></font>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.php"><font color="white">GALLERY</a></font>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="team.php"><font color="white">TEAM</a></font>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.php"><font color="white">CONTACT</a></font>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="project.php"><font color="white">PROJECTS</a></font>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="panel.php"><font color="white">ADMIN PANEL</a></font>
+      </li>  
+    </ul>
+  </div>  
+</nav>
+<br>
+ <div class="main-content">
+     <h3>Welcome to CEG MOTORSPORTS!</h3>
+ </div>
+ 
+
+<div class="w3-content w3-section" style="max-width:300px">
+  <img class="mySlides" src="images/ii.jpg">
+  <img class="mySlides" src="images/iii.jpg">
+  <img class="mySlides" src="images/v.jpg">
+</div>
+
+ 
+
+
+
+<div class="container">
+   <div class="box">
+       <p>We, the team of skilled and dedicated students passionate about automobiles and it is our goal to design and fabricate an ATV on par with best in the market. In recent years, we have consistently placed in the top quarter of teams in the competition. This past year, we earned high placings in all areas of the competition.
+    </p>
+   </div>
+   <div class="box">
+       <p>
+         Focusing on communication and goals helps guide the team to success year after year. Each new year is filled with new ideas, enthusiasm, and new recruits. As we look forward to another and re-build our own team, our desire is nothing less than a podium finish this time.
+       </p>
+    </div>
+ </div>
+
+  <div class="timer">
+  	<h5>BAJA SAE INDIA 2021</h5>
+  </div>
+
+  <div class="counter">
+  	 <p id="demo"></p>
+  </div>
+
+  <div class="notification">
+    <div class="noti">
+       <center><h3><i>Notification</i></h3></center>
+        
+       <p><marquee behavior="scroll" direction="right" onmouseover="this.stop();" onmouseout="this.start();">Design phase is on...</marquee></p>
+       <p><marquee behavior="scroll" direction="right" onmouseover="this.stop();" onmouseout="this.start();">Design phase is on...</marquee></p>
+       <p><marquee behavior="scroll" direction="right" onmouseover="this.stop();" onmouseout="this.start();">Design phase is on...</marquee></p>
+       <p><marquee behavior="scroll" direction="right" onmouseover="this.stop();" onmouseout="this.start();">Design phase is on...</marquee></p>
+
+       
+    </div>
+  </div>
+   
+   <div class="footer">
+    <hr>
+   	 <h3> CONTACT </h3>
+   	
+   	 <div class="social">
+   	
+   	  
+   	  	<a href="https://www.facebook.com/CEGMotorsports.BAJA/"><i class="fa fa-facebook"></i></a>
+   	
+   	  	<a href="https://twitter.com/CEGMotorsports?s=08"><i class="fa fa-twitter"></i></a>
+   	  
+   	  	<a href="https://www.instagram.com/ceg_motorsports/?igshid=eoay9ko1ecf9"><i class="fa fa-instagram"></i></a>
+   	
+   	  	<a href="https://www.linkedin.com/company/ceg-motorsports/"><i class="fa fa-linkedin"></i></a>
+   	 
+     </div>
+      
+       <div class="home">
+       	<p>
+       	  <font color="#ebebeb"><i class="fa fa-envelope"></i>&nbsp;cegmotorsports@gmail.com<br><br>
+       	  <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Location: Mechanical Department, Anna University, Chennai-600025
+
+</font>
+       	<br><br><p>
+        <center><font color="#ebebeb"><p> &copy; CEGMOTORSPORTS 2020.</p></center></font>
+       </div>
+
+   </div>
+
+ <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 1000); // Change image every 2 seconds
+}
+
+
+
+var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days +"D :" +" "+ hours +  "H :" +
+  + minutes +  "M :"  + seconds +"S";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+
+</script>
+
+</body>
+</html>
+
+
