@@ -1,401 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
-
-.main-content h3{
-	  text-align: center;
-	  font-size: 30px;
-    font-weight: bold;
-    
-    color: black;
-    text-align: center;
-   
-     margin-bottom: 40px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-
-
 
 body{
-    background: linear-gradient(to top left, #ebebeb 50%, #fff 50%);
-
+      background: linear-gradient(to top left, #ebebeb 50%, black 50%);
 }
 
-.mySlides 
-{
-	display:none;
-	height: 100%;
-	width: 100%;
-  align-items: center;
-	margin-bottom: 100px;
+.wrapper{
+  margin-top: 50px;
 }
 
-.notification{
+.wrapper h1{
+  font-family: 'Allura', cursive;
+  color: white;
+  font-size: 52px;
+  margin-bottom: 70px;
   text-align: center;
 }
-.notification .noti{
-   background-color: white;
-   text-align: center;
-   width: 1000px;
-   height: 250px;
-   position: relative;
-   margin: blue;
-   box-shadow: 5px 5px grey;
-   display: inline-block;
-   margin-top: 50px;
-   margin-bottom: 30px;
-   cursor: pointer;
-}
 
-.notification .noti h3{
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
   text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
-.notification .noti p{
-  font-size: 20px;
-  color: black;
-  margin-left: 100px;
-  cursor: pointer;
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 70px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
   position: relative;
 }
 
-.notification .noti p:hover{
-  color: red;
-  cursor: pointer;
-}
-
-.footer .social{
-
-  text-align: center;
-  margin-bottom: 20px;
-
-}
-
-.footer .social .fa-facebook{
-  padding: 10px;
-  width: 40px;
-  margin-right: 10px;
-  margin-left: 20px;
-  font-size: 20px;
-  color:white;
-  background: #3b5998;
-
-}
-   
-.footer .social .fa-twitter{
-  padding: 10px;
-  width: 40px;
-  margin-right: 10px;
-  font-size: 20px;
-  color:white;
-   background:#00acee;
-}
-
-.social .fa-instagram{
-  padding: 10px;
-  width: 40px;
-  margin-right: 10px;
-  font-size: 20px;
-  color:white;
-   background:#3f729b;
-}
-
-
-.footer .social .fa-linkedin{
-  padding: 10px;
-  width: 40px;
-  margin-right: 10px;
-  font-size: 20px;
-  color:white;
-   background:#0e76a8;
-} 
-
-.footer .social .fa-facebook:hover{
-  
-    color:#ebebeb;
-}
-.footer .social .fa-twitter:hover{
-  
-    color:#ebebeb;
-}
-.footer .social .fa-instagram:hover{
-  
-    color:#ebebeb;
-}
-.footer .social .fa-linkedin:hover{
-  
-    color:#ebebeb;
-} 
-                  
-
-.container .box p{
+.team .team_member h3{
   color: black;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: black;
+  margin: 12px 0;
   font-size: 18px;
-  margin-bottom: 50px;
-  margin-top: 30px;
-  margin-left: 10px;
-  text-align: justify;
-}
-.timer{
-  text-align: center;
-  
+  text-transform: lowercase;
 }
 
-.timer h5{
-  color: black;
-  font-size: 30px;
-  font-weight: bold;
-}
-
- .counter{
-   text-align: center;
- }
-
- .counter p{
-
-   display:inline-block;
-   font-size: 16px;
-   font-weight: bold;
-   color: white;
-   padding:30px;
-   background: black;
-   border-radius: 50px;
-   box-shadow: 2px 2px 2px 2px #ebebeb;
-   margin-bottom: 50px;
-
- }
-
-
-
- 
-
- .footer{
-    max-width: 100%;
-    height: 280px;
-    background-color:#43464b;
- }
-
- .footer h3{
-    margin-left: 10px;
-    margin-top: 30px;
-    margin-bottom: 2px;
-    font-size: 20px;
-    color: white;
- }
-
-.home i{
-  margin-left: 60px;
-  font-size: 30px;
-  color: grey;
-  font-weight: lighter;
-  margin-right: 10px;
-}
-.home p{
-  text-align: none;
-  margin-left: 20px;
-}
-.contact-section h2{
-   color: black;
-   margin-top: 30px;
-   text-align: center;
-   margin-bottom: 40px;
-}
-
-.contact-icons {
-  margin-left: 50px;
-  margin-right: 30px;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.contact-icons .fa{
-  color: black;
-  font-size: 40px;
-}
-
-.contact-icons h4{
-  color: black;
-}
-
-.contact-icons h5{
-  color: black;
-}
-
-.contact-icons p{
+.team .team_member p{
   color: black;
   font-size: 16px;
-  margin-bottom: 30px;
+  text-transform: capitalize;
 }
 
-
-
-
-.about h2{
-  margin-left: 50px;
-  color: black;
-  text-align: none;
-  font-style: italic;
-  margin-bottom: 50px;
-
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
 }
 
-.content{
-  display: flex;
-  margin-bottom: 50px;
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
 }
-
-.about .content p{
-  margin-top: 20px;
-  margin-left: 70px;
-  margin-right: 40px;
-  color: black;
-  font-size: 18px;
-  max-width: 50%;
-  text-align: justify;
-}
-
-.about .content img{
-   margin-left: 25px;
-   margin-right: 50px;
-   width: 300px;
-   height: 300px;
-   max-width: 50%;
-}
-
-.gallery{
-
-   text-align: center;
-   margin-bottom: 30px;
-   font-size: 30px;
-   color: black;
-}
- 
-@media (max-width: 1199px)
-{
-	.main-content{
-		font-size: 12px;
-
-       }
-
-     .social-icons .fa{
-     	margin-right: 10px;
-     }
-
-     
-
-     .container  .box{
-          
-     	  max-width:100%;
-     }
-
-     .container  .box p{
-         font-size: 16px;
-         margin-right: 2px;
-     }
-
-
-.footer .social .fa-facebook{
-  padding: 10px;
-  width: 40px;
-  margin-right: 5px;
-  margin-left: 20px;
-  font-size: 20px;
-  color:white;
-   background: #3b5998;
-}
-   
-.footer .social .fa-twitter{
-  padding: 10px;
-  width: 40px;
-  margin-right: 5px;
-  font-size: 20px;
-  color:white;
-  background:#00acee;
-
-}
-
-.footer .social .fa-instagram{
-  padding: 10px;
-  width: 40px;
-  margin-right: 5px;
-  font-size: 20px;
-  color:white;
-  background:#3f729b;
-
-}
-
-
-.footer .social .fa-linkedin{
-  padding: 10px;
-  width: 40px;
-  margin-right: 5px;
-  font-size: 20px;
-  color:white;
-     background:#0e76a8;
-
-
-}                        
-
-.footer h3{
-    margin-left: 10px;
-    margin-top: 16px;
-    margin-bottom: 25px;
-    font-size: 16px;
-    color: white;
- }
-
- .notification{
-   text-align: center;
- }
-
- .notification .noti{
-   background-color: white;
-   width: 270px;
-   height: 300px;
-   box-shadow: 2px 2px 2px 2px grey;
-   display: inline-block;
-   margin-bottom: 10px;
-}
-
-.notification .noti p{
-  font-size: 16px;
-  color: black;
-  margin-left: 2px;
-}
-
- .contact-icons h5{
-   font-size: 16px;
- } 
-
- .about .content p{
-    margin-left: 50px;
-    font-size: 16px;
-    text-align: justify-all;
-    max-width: 100%;
- } 
-
- .home h5{
-    font-size: 16px;
- }
-
- .content{
-  display: block;
-  text-align: center;
-}  
-
-   .about .content img{
-     width: 200px;
-     height: 180px;
-   }
-
-    .footer{
-      height: 340px;
-    }
-
-   .footer .social{
-     margin-bottom: 30px;
-   }
-}
-
